@@ -1,0 +1,19 @@
+spring:
+   profiles:
+     active: dev
+   jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: always
+    time-zone: GMT+8
+   freemarker:
+     request-context-attribute: request
+     settings.boolean_format: 是,否
+     cache: false
+     expose-request-attributes: true
+   resources:
+     chain:
+       cache: true
+       gzipped: true
+
+spring.mvc.static-path-pattern: /static/**
+
